@@ -204,14 +204,51 @@ or
 
 ---
 
+---
+
+## Case 6: Vector Addition (Diagonal Movement)
+
+#### To combine multiple movements or forces acting on a character (resulting in diagonal movement):
+
+When a character is influenced by more than one direction at the same time (for example, moving right **and** down), we use **vector addition** to compute the final movement vector.
+
+```
+V⃗r = V⃗1 + V⃗2
+V⃗r(x) = V⃗1x + V⃗2x
+V⃗r(y) = V⃗1y + V⃗2y
+```
+
+After combining the vectors, the total distance (or speed) of the resulting movement is calculated using the vector magnitude formula:
+
+```
+|V⃗r| = √(V⃗rx² + V⃗ry²)
+```
+
+* **V⃗1** (Vector) = First movement or force (e.g., moving right)
+* **V⃗2** (Vector) = Second movement or force (e.g., moving down)
+* **V⃗r** (Vector) = Combined movement direction
+* **|V⃗r|** (Distance / Speed) = Magnitude of the final movement
+
+**In simple words:**
+***Multiple directional movements combine into one vector, naturally producing diagonal motion.***
+
+This allows characters to move diagonally **without special diagonal logic**, since diagonal movement is simply the result of adding horizontal and vertical vectors together.
+
+![Demo](case-6/demo.png)
+[C++ Working](case-6/demo.cpp)
+
+---
+
+
 ### Conceptual Summary
 
-| Case       | What You Extract     |
-| ---------- | -------------------- |
-| Case 1     | Direction + Distance |
-| Case 2     | Distance             |
-| Case 3     | Distance Comparison  |
-| Case 4     | Speed Control        |
-| **Case 5** | **Pure Direction**   |
+| Case        | What You Extract                |
+| ----------  | --------------------            |
+| Case 1      | Direction + Distance            |
+| Case 2      | Distance                        |
+| Case 3      | Distance Comparison             |
+| Case 4      | Speed Control                   |
+| Case 5      | Direction                       |
+| Case 6      | Diagonal Direction + Distance   |
 
 ---
