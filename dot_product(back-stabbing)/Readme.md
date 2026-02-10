@@ -40,6 +40,6 @@ Cross = x₁·y₂ − y₁·x₂
 ***Dot tells front/back, Cross tells left/right***
 
 ![Demo](demo.png)
-[C++ Working](main.cpp)
+[C++ Working](demo.cpp)
 
 ---
