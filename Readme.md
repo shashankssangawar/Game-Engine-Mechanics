@@ -10,3 +10,4 @@ Follow along with the course using the playlist below:
 
 ### 📘 Chapters
 - [Chapter 1: Character Movement with Vectors](character_movement_with_vectors/Readme.md)
+- [Chapter 2: Dot / Cross Products](dot_product\(back-stabbing\)/Readme.md)
