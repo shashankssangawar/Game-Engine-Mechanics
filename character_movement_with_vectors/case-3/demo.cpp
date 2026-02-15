@@ -82,7 +82,8 @@ int main() {
     Color color1 = (dist1Sqr < dist2Sqr) ? GREEN : GRAY;
     Color color2 = (dist2Sqr < dist1Sqr) ? GREEN : GRAY;
 
-    if (dist1Sqr == dist2Sqr) {
+    float epsilon = 1.0f; // tolerance in squared-pixel units
+    if (std::fabs(dist1Sqr - dist2Sqr) < epsilon) {
       color1 = ORANGE;
       color2 = ORANGE;
     }
