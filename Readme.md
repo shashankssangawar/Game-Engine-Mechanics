@@ -3,11 +3,19 @@
 >
 > This project is strictly for educational purposes—I do not gain anything from it other than knowledge. If you find any mistakes or inaccuracies, feel free to open an issue and provide corrections with proper explanations.
 
+>
+> To run the projects exec this command everytime for each project:
+```
+g++ demo.cpp -o .demo $(pkg-config --cflags --libs raylib) -std=c++17
+```
+
 ### 📺 YouTube Playlist
 Follow along with the course using the playlist below:
 
 [![Physics in Games – YouTube Playlist](https://img.youtube.com/vi/sKCF8A3XGxQ/0.jpg)](https://www.youtube.com/playlist?list=PLW3Zl3wyJwWOpdhYedlD-yCB7WQoHf-My)
 
+
 ### 📘 Chapters
 - [Chapter 1: Character Movement with Vectors](character_movement_with_vectors/Readme.md)
-- [Chapter 2: Dot / Cross Products](dot_product\(back-stabbing\)/Readme.md)
+- [Chapter 2: Dot / Cross Products](dot_product(back-stabbing)/Readme.md)
+- [Chapter 3: Jumping and Gravity](jumping_and_gravity/Readme.md)
